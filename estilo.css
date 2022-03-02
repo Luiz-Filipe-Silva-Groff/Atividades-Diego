@@ -1,0 +1,140 @@
+body {
+
+    background: white!important;
+    background-repeat: no-repeat;
+    
+
+}
+
+#caixa {
+
+    background: rgb(243, 243, 243);
+    width: 500px;
+    height: 500px;
+    padding-top: 100px;
+    border-radius: 50px;
+    box-shadow: rgba(10, 10, 10, 0.438) 2px 2px 2px 2px;
+
+}
+
+
+
+
+#caixa h1{
+
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+
+#btn-control {
+
+    text-align: center;
+    
+
+}
+
+.btn-1{
+
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px;
+    background-image: linear-gradient(120deg, #3a61fe, #d43afe);
+    border-radius: 100px;
+    position: relative;
+    color: white;
+    animation: nome  3s linear infinite alternate;
+
+}
+
+.btn-1 :before {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: inherit;
+    border-radius: inherit;
+    z-index: -1;
+    top: 15px;
+    filter: blur(30px);
+    opacity: 0.9;
+
+
+}
+
+
+input {
+
+    caret-color: #d43afe;
+    padding-bottom: 30px;
+
+    
+
+}
+
+.input-control {
+
+    padding-bottom: 20px;
+
+}
+
+#usuario, #nome {
+
+    border-color: #3a61fe;
+    animation: nome  3s linear infinite alternate;
+
+
+}
+
+
+@keyframes nome {
+
+    from {
+
+        filter: hue-rotate(0deg);
+
+ }
+ 
+    to {
+
+        filter: hue-rotate(60deg);
+
+    }
+
+}
+
+@media (min-width: 490px) and (max-width: 550px) {
+
+    #caixa {
+
+    background: rgb(243, 243, 243);
+    width: 450px;
+    height: 500px;
+    padding-top: 100px;
+    border-radius: 50px;
+    box-shadow: rgba(10, 10, 10, 0.438) 2px 2px 2px 2px;
+
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 489px) {
+
+    #caixa {
+
+    background: rgb(243, 243, 243);
+    width: 350px;
+    height: 450px;
+    padding-top: 100px;
+    border-radius: 50px;
+    box-shadow: rgba(10, 10, 10, 0.438) 2px 2px 2px 2px;
+
+}
+
+}
